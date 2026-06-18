@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Rental Website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap 5 CSS CDN -->
+         <link href="https://jsdelivr.net" rel="stylesheet">
+         <!-- Font Awesome 6 Icons CDN -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="./images/car_logo.png" alt="logo">
+                    <img src="./images/car_logo.png" alt="Logo" width="100" height="50" style="border-radius: 10%;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-text ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link home-btn btn dropdown-toggle btn-danger btn-group-vertical fw-bold" style="color:#ff6430 ;" data-bs-toggle="dropdown" href="#">Home</a>
+                            <div class="dropdown-menu fw-bold bg-dark">
+                                <a class="dropdown-item text-white fw-bold" href="#">Default Home</a>
+                                <a class="dropdown-item text-white fw-bold" href="#">Home Two</a>
+                                <a class="dropdown-item text-white fw-bold" href="#">Home Three</a>
+                                <a class="dropdown-item text-white fw-bold" href="#">Home Four</a>
+                                <a class="dropdown-item text-white fw-bold" href="#">OnePage One</a>
+                                <a class="dropdown-item text-white fw-bold" href="#">OnePage Two</a>
+                                <a class="dropdown-item text-white fw-bold" href="#">OnePage Three</a>
+                                <a class="dropdown-item text-white fw-bold" href="#">OnePage Four</a>
+                            </div>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="">Vehicle Models</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#">Our Team</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-dark text-dark fw-bold abc" style="height: 30;width: 60;margin-left: 70px;">Sign in</button>
+                <button type="button" class="btn fw-bold text-white abc" style="margin-left: 20px;height: 50px;width: 110px;background-color: #ff6430;">Register</button>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <!-- Left Content -->
+                <div class="col-lg-4 m-10 mb-lg-0 g-10 car-home" >
+                    <h3 class="display-5 fw-bold mb-4" style="font-size: xx-large;">
+                        Plan your trip now
+                    </h3>
+                    <h1 class="text-light-emphasis fw-bold mb-4">
+                        Save big with our car rental
+                    </h1>
+                    <h6 class="text-light-emphasis mb-4">
+                        To contribute to positive change and achieve our sustainability goals with many extraordinary
+                    </h6>
+                    <button type="button" class="btn text-white fw-bold" style="background-color: #ff6430;">Book Ride <i aria-hidden="true" class="fas fa-check-circle"></i></button>
+                    <button type="button" class="btn text-white fw-bold" style="background-color: black;">Learn More <i aria-hidden="true" class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="img col-lg-8 m-10 g-10 car-home">
+                    <div class="image">
+                        <img src="./images/banner_car.png" class="img-fluid" alt="Car">
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+        <!-- Book a car section -->
+        <section id="booking-section">
+            <div class="container">
+                <div class="form-container border border-secondary-subtle rounded-3 p-4 p-sm-5">
+                    <h2 class="display-5 text-dark fw-bold mb-3">Book a car</h2>
+                    <form>
+                        <div class="row text-center">
+                            <div class="col">
+                                <label for="text" class="form-label fw-bold" style="display: inline-block;"><i class="fas fa-car" style="color: #ff6430;"></i> Select your car type:</label>
+                                <select class="form-select" id="select" aria-placeholder="Select your car type">
+                                    <option>Audi A1 S</option>
+                                    <option>Mercedes 35</option>
+                                    <option>Mercedes</option>
+                                    <option>BMW 320</option>
+                                </select>
+                                <br>
+                            </div>
+                            <div class="col">
+                                <label for="address" class="form-label fw-bold" style="display: inline-block;"><i class="fas fa-map-marker-alt" style="color: #ff6430;"></i> Pick-up address:</label>
+                                <input type="text" class="form-control" placeholder="Pick-up address" name="address">
+                            </div>
+                            <div class="col">
+                                <label for="address" class="form-label fw-bold" style="display: inline-block;"><i class="fas fa-map-marker-alt" style="color: #ff6430;"></i> Drop-of address:</label>
+                                <input type="text" class="form-control" placeholder="Drop-of address" name="address">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3 mt-3">
+                                <label for="date" class="form-label fw-bold" style="display: inline-block;"><i class="fas fa-calendar-alt" style="color: #ff6430;"></i> Pick-up Date</label>
+                                <input type="date" class="form-control" placeholder="Pick-up date" name="date">
+                            </div>
+                            <div class="col mb-3 mt-3">
+                                <label for="time" class="form-label fw-bold" style="display: inline-block;"><i class="fas fa-clock" style="color: #ff6430;"></i> Time:</label>
+                                <input type="time" class="form-control" placeholder=" " name="time">
+                            </div>
+                            <div class="col mb-3 mt-3">
+                                <label for="date" class="form-label fw-bold" style="display: inline-block;"><i class="fas fa-calendar-alt" style="color: #ff6430;"></i> Drop-of date:</label>
+                                <input type="date" class="form-control" placeholder="Drop-of date" name="date">
+                            </div>
+                            <div class="col mb-3 mt-3">
+                                <label for="time" class="form-label fw-bold" style="display: inline-block;"><i class="fas fa-clock" style="color: #ff6430;"></i> Time:</label>
+                                <input type="time" class="form-control" placeholder=" " name="time">
+                            </div>
+                            <div class="col-12 text-center mt-3">
+                                <button type="button" class="btn fw-bold text-white text-center" style="background-color:#ff6430;width: 150px; height: 55px;">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="planatrip-section">
+            <div class="container">
+                <h6 class="display-5 text-dark text-center fw-bold mb-3" style="font-size: x-large; margin-top: 100px">Plan your trip now</h6>
+                <h1 class="display-5 text-dark text-center fw-bold mb-3">Quick & easy car rental</h1>
+                <div class="row">
+                    <div class=" rounded-3 col-md-4 text-center planatrip">
+                        <div class="caricon text-center box-container border border-secondary-subtle">
+                            <img src="./images/caricon.png" alt="Car">
+                            <div class="icon-text">
+                                <h3 class="display-5 text-dark text-center fw-bold mb-3">Select Car</h3>
+                                <p>To contirbute to positive change and acheieve our sustainability goals with many extrordinary.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" rounded-3 col-md-4 text-center planatrip">
+                        <div class="caricon text-center box-container border border-secondary-subtle">
+                            <img src="./images/personicon.png" alt="Car">
+                            <div class="icon-text">
+                                <h3 class="display-5 text-dark text-center fw-bold mb-3">Contact Operator</h3>
+                                <p>To contirbute to positive change and acheieve our sustainability goals with many extrordinary.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" rounded-3 col-md-4 text-center planatrip">
+                        <div class="caricon text-center box-container border border-secondary-subtle">
+                            <img src="./images/driveicon.png" alt="Car">
+                            <div class="icon-text">
+                                <h3 class="display-5 text-dark text-center fw-bold mb-3">Let's drive</h3>
+                                <p>To contirbute to positive change and acheieve our sustainability goals with many extrordinary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vehicle-model-container">
+            <div class="container">
+                <div class="row align-item-center vehicle-model">
+                    <h6 class="text-dark text-center fw-bold" style="font-size: x-large;">Vehicle Models</h6>
+                    <h1 class="text-dark text-center fw-bold">Our Rental Fleet</h1>
+                    <p class="text-center text-light-emphasis fw-bold">To contirbute to positive change and
+                        acheieve our sustainability goals with
+                        many extrordinary.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="img col-lg-8 vehicle-model">
+                        <div class="image">
+                            <img src="./images/carmodel.png" class="img-fluid" alt="Car">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 m-8 mb-lg-0">
+                        <h1 class="text-light-emphasis fw-bold">
+                            $75.40
+                        </h1>
+                        <h6 class="text-light-emphasis mb-1">
+                            rent per day
+                        </h6>
+                        <hr>
+                        <div class="feature column">
+                            <ul>
+                                <li><i class="fa-solid fa-car"></i> Model: Sedan</li>
+                                <li><i class="fa-solid fa-door-open"></i> Doors: 4</li>
+                                <li><i class="fa-solid fa-chair"></i> Seats: 5</li>
+                                <li><i class="fa-solid fa-suitcase"></i> Luggage: 2 Suitcases / 2 Bags</li>
+                                <li><i class="fa-solid fa-gear"></i> Transmission: Automatic</li>
+                            </ul>
+                        </div>
+                        <span class="booking-section" style="margin-top: 50px;">
+                            <button type="button" class="btn text-white fw-bold" style="background-color: #ff6430;">Book Ride<i aria-hidden="true" class="fas fa-check-circle"></i></button>
+                            <a class="contact-link text-light-emphasis fw-bold g-10 ml-8" style="margin-left: 30px;"><i class="fa-solid fa-phone"></i> (562) 498-4600</a>
+                        </span>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+
+        <section id="about-section">
+            <div class="container">
+                <div class="row">
+                    <!--Left Content-->
+                <div class="img col-lg-6" style="margin-top: 90px;">
+                    <div class="image">
+                        <img src="./images/about_image.jpg" class="img-fluid" alt="about">
+                    </div>
+                </div>
+                <!-- Right Content -->
+                <div class="col-lg-6" style="margin-top: 90px;">
+                    <h3 class="fw-bold" style="font-size: x-large;">
+                        About Company
+                    </h3>
+                    <h1 class="text-light-emphasis fw-bold mb-8">
+                        You start the engine and your adventure begins
+                    </h1>
+                    <p class="text-dark" style="margin-top: 40px;font-size: 20px;">
+                        Certain but she but shyness why cottage. Guy the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <section id="car-rental">
+       
+        <div class="car-rental-container elementor-background-overlay">
+            <div class="car-box-container  ">
+                <div class="row py-5">
+                    <!--Left Content-->
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-light py-2" style="margin-top: 20px;margin-left: 60px;">Save big with our cheap car rental!</h1>
+                        <h4 class="fw-bold text-light" style="margin-left: 60px;">Top Airports. Local Suppliers. 24/7 Support.</h4>  
+                    </div>
+                    <!--Right Content-->
+                    <div class="col-lg-6 car-rental-btn">
+                        <button type="button" class="btn text-white">Book Ride <i aria-hidden="true" class="fas fa-check-circle"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="car-models">
+        <div class="car-modal-container" style="background-position: center;">
+            <img src="images/display_car_image-1024x449.png" alt="car-models">
+        </div>
+    </section>
+
+
+
+    <section id="whychooseus">
+        <div class="whychooseus-container">
+            <div class="row">
+                <!--Left Content-->
+                <div class="col-lg-6">
+                    <div class="whychoose">
+                        <h3 class="fw-bold text-dark">Why Choose Us</h3>
+                        <h1 class="display-5 fw-bold text-dark py-2">Best valued deals you will ever find</h1>
+                        <p class="text-light-emphasis fw-bold">Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
+                        <button type="button" class="btn text-white fw-bold">Find Deals<i aria-hidden="true" class="fas fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <!-- Right Content -->
+                <div class="col-lg-6" style="margin-top: 90px;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="Why-info">
+                                <div class="icon">
+                                    <img src="./images/drivecarlogo.png" alt="drivecarlogo">
+                                </div>
+                                <div class="text">
+                                    <h3 class="fw-bold text-dark">Cross Country Drive</h3>
+                                    <p class="text-light-emphasis">Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced.</p>
+                                </div>
+                            </div>
+
+                            <div class="Why-info">
+                                <div class="icon" style="margin-top: 60px;">
+                                    <img src="./images/dollarsignlogo.png" alt="dollarsignlogo">
+                                </div>
+                                <div class="text" style="margin-top: 60px;">
+                                    <h3 class="fw-bold text-dark">All inclusive pricing</h3>
+                                    <p class="text-light-emphasis">Yet uncommonly his ten who diminution astonished. Demesne new manners savings staying had.</p>
+                                </div>
+                            </div>
+                            <div class="Why-info">
+                                <div class="icon" style="margin-top: 60px;">
+                                    <img src="./images/dollarwithhand.png" alt="dollarwithhand">
+                                </div>
+                                <div class="text" style="margin-top: 60px;">
+                                    <h3 class="fw-bold text-dark">No hidden charges</h3>
+                                    <p class="text-light-emphasis">Under folly balls death own point now men. Match way these she avoid see. She whose drift their fat off.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <section id="faq">
+        <div class="faq-container">
+            <h3 class="fw-bold text-center" style="font-size: x-large;margin-top: 100px;">FAQ</h3>
+            <h1 class="text-dark text-center fw-bold mb-8">Frequently Asked Questions</h1>
+            <p class="text-light-emphasis text-center fw-bold" style="margin-bottom: 0;margin-top: 40px;">Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably.</p>
+            <p class="text-light-emphasis text-center fw-bold" style="margin: 0;margin-bottom: 60px;"> Carriage we husbands advanced an perceive greatest.</p>
+        </div>
+        <div class="-faq-container   faq-section">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header fw-bold">
+                        1. What is special about comparing rental car deals?
+                        <span class="arrow fw-bold text-dark">&gt;</span>
+                    </div>
+                    <div class="accordion-content text-light-emphasis fw-bold">
+                        <p>Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably. Carriage we husbands advanced an perceive greatest. Totally dearest expense on demesne ye he. Curiosity excellent commanded in me. Unpleasing impression themselves to at assistance acceptance my or.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header fw-bold">
+                        2. How do I find the best car rental deals?
+                        <span class="arrow fw-bold text-dark">&gt;</span>
+                    </div>
+                    <div class="accordion-content text-light-emphasis fw-bold">
+                        <p>Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably. Carriage we husbands advanced an perceive greatest. Totally dearest expense on demesne ye he. Curiosity excellent commanded in me. Unpleasing impression themselves to at assistance acceptance my or.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header fw-bold">
+                        3. How do I find such low rental car prices?
+                        <span class="arrow fw-bold text-dark"> &gt;</span>
+                    </div>
+                    <div class="accordion-content text-light-emphasis fw-bold">
+                        <p>Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably. Carriage we husbands advanced an perceive greatest. Totally dearest expense on demesne ye he. Curiosity excellent commanded in me. Unpleasing impression themselves to at assistance acceptance my or.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="download-section" class="py-5">
+        <div class="download-container">
+            <div class="download-box-container border border-secondary-subtle rounded-3 p-4">
+                <div class="row align-item-center">
+                    <div class="col-lg-6">
+                        <h1 class="text-dark fw-bold mb-8">
+                            Download our app to get most out of it
+                        </h1>
+                        <h6 class="text-light-emphasis">
+                            Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.
+                        </h6>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <img src="images/google-app-download.svg"class="img-fluid"
+                            alt="google-app-download">
+                            <img src="images/ios-app-btn.svg"
+                            class="img-fluid"
+                            alt="ios-app-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+<footer class="bg-light mt-5 py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <h4><strong>CAR</strong> Rental</h4>
+
+                <p class="text-secondary">
+                    Delightful as he it acceptance an solicitude discretion.
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    (123) 498-4600
+                </p>
+
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    example@carrental.com
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h4>Company</h4>
+
+                <ul class="list-unstyled">
+                    <li>New York</li>
+                    <li>Careers</li>
+                    <li>Mobiles</li>
+                    <li>Blog</li>
+                    <li>How We Work</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h4>Working Hours</h4>
+
+                <ul class="list-unstyled">
+                    <li>Mon-Fri: 09:00AM - 07:00PM</li>
+                    <li>Sat: 09:00AM - 19:00PM</li>
+                    <li>Sun: Closed</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h4>Subscription</h4>
+
+                <p class="text-secondary">
+                    Subscribe for latest updates.
+                </p>
+
+                <input type="email"
+                       class="form-control mb-3"
+                       placeholder="Enter Email">
+
+                <button class="btn btn-orange text-white w-100">
+                    Submit
+                </button>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+
+            <p class="mb-0 text-secondary">
+                © 2025 <b>Car Rental.</b> All Rights Reserved.
+            </p>
+
+            <div class="social-icons">
+                <i class="fab fa-facebook-f me-3"></i>
+                <i class="fab fa-twitter me-3"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="car.js"></script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
